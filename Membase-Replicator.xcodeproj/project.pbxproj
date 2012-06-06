@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		566D71BA157B672D0006B664 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566D71B9157B672D0006B664 /* main.cpp */; };
+		566D71BC157B672D0006B664 /* Membase_Replicator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 566D71BB157B672D0006B664 /* Membase_Replicator.1 */; };
+		566D7224157B69030006B664 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566D721F157B69020006B664 /* Config.cpp */; };
+		566D7225157B69030006B664 /* MembaseClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566D7221157B69020006B664 /* MembaseClient.cpp */; };
+		566D722A157B6D3D0006B664 /* MembaseCallbacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566D7229157B6D3D0006B664 /* MembaseCallbacks.cpp */; };
+		566D722D157B744F0006B664 /* MembaseCBImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566D722C157B744F0006B664 /* MembaseCBImpl.cpp */; };
+		56CDA466157C79E300F4376A /* tri_logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56CDA464157C79E300F4376A /* tri_logger.cpp */; };
+		56CDA46E157DCC9000F4376A /* TapJob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56CDA46D157DCC9000F4376A /* TapJob.cpp */; };
+		56CDA475157DD5C800F4376A /* ReplicatorJob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56CDA474157DD5C800F4376A /* ReplicatorJob.cpp */; };
+		56CDA477157E187900F4376A /* MembaseBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56CDA476157E187800F4376A /* MembaseBridge.cpp */; };
+		56CDA51C157E3D0800F4376A /* libboost_chrono-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA503157E3D0600F4376A /* libboost_chrono-mt.dylib */; };
+		56CDA51D157E3D0800F4376A /* libboost_date_time-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA504157E3D0600F4376A /* libboost_date_time-mt.dylib */; };
+		56CDA51E157E3D0800F4376A /* libboost_filesystem-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA505157E3D0600F4376A /* libboost_filesystem-mt.dylib */; };
+		56CDA51F157E3D0800F4376A /* libboost_graph-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA506157E3D0700F4376A /* libboost_graph-mt.dylib */; };
+		56CDA520157E3D0800F4376A /* libboost_iostreams-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA507157E3D0700F4376A /* libboost_iostreams-mt.dylib */; };
+		56CDA521157E3D0800F4376A /* libboost_locale-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA508157E3D0700F4376A /* libboost_locale-mt.dylib */; };
+		56CDA522157E3D0800F4376A /* libboost_math_c99-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA509157E3D0700F4376A /* libboost_math_c99-mt.dylib */; };
+		56CDA523157E3D0800F4376A /* libboost_math_c99f-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA50A157E3D0700F4376A /* libboost_math_c99f-mt.dylib */; };
+		56CDA524157E3D0800F4376A /* libboost_math_c99l-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA50B157E3D0700F4376A /* libboost_math_c99l-mt.dylib */; };
+		56CDA525157E3D0800F4376A /* libboost_math_tr1-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA50C157E3D0700F4376A /* libboost_math_tr1-mt.dylib */; };
+		56CDA526157E3D0800F4376A /* libboost_math_tr1f-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA50D157E3D0700F4376A /* libboost_math_tr1f-mt.dylib */; };
+		56CDA527157E3D0800F4376A /* libboost_math_tr1l-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA50E157E3D0700F4376A /* libboost_math_tr1l-mt.dylib */; };
+		56CDA528157E3D0800F4376A /* libboost_prg_exec_monitor-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA50F157E3D0700F4376A /* libboost_prg_exec_monitor-mt.dylib */; };
+		56CDA529157E3D0800F4376A /* libboost_program_options-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA510157E3D0700F4376A /* libboost_program_options-mt.dylib */; };
+		56CDA52A157E3D0800F4376A /* libboost_python-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA511157E3D0700F4376A /* libboost_python-mt.dylib */; };
+		56CDA52B157E3D0800F4376A /* libboost_random-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA512157E3D0700F4376A /* libboost_random-mt.dylib */; };
+		56CDA52C157E3D0800F4376A /* libboost_regex-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA513157E3D0700F4376A /* libboost_regex-mt.dylib */; };
+		56CDA52D157E3D0800F4376A /* libboost_serialization-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA514157E3D0700F4376A /* libboost_serialization-mt.dylib */; };
+		56CDA52E157E3D0800F4376A /* libboost_signals-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA515157E3D0700F4376A /* libboost_signals-mt.dylib */; };
+		56CDA52F157E3D0800F4376A /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA516157E3D0700F4376A /* libboost_system-mt.dylib */; };
+		56CDA530157E3D0800F4376A /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA517157E3D0700F4376A /* libboost_thread-mt.dylib */; };
+		56CDA531157E3D0800F4376A /* libboost_timer-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA518157E3D0700F4376A /* libboost_timer-mt.dylib */; };
+		56CDA532157E3D0800F4376A /* libboost_unit_test_framework-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA519157E3D0700F4376A /* libboost_unit_test_framework-mt.dylib */; };
+		56CDA533157E3D0800F4376A /* libboost_wave-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA51A157E3D0700F4376A /* libboost_wave-mt.dylib */; };
+		56CDA534157E3D0800F4376A /* libboost_wserialization-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA51B157E3D0700F4376A /* libboost_wserialization-mt.dylib */; };
+		56CDA53D157E3D3D00F4376A /* libcouchbase_libevent.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA535157E3D3D00F4376A /* libcouchbase_libevent.1.dylib */; };
+		56CDA53E157E3D3D00F4376A /* libcouchbase.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA536157E3D3D00F4376A /* libcouchbase.1.dylib */; };
+		56CDA53F157E3D3D00F4376A /* libevent_core-2.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA537157E3D3D00F4376A /* libevent_core-2.1.1.dylib */; };
+		56CDA540157E3D3D00F4376A /* libevent_extra-2.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA538157E3D3D00F4376A /* libevent_extra-2.1.1.dylib */; };
+		56CDA541157E3D3D00F4376A /* libevent_openssl-2.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA539157E3D3D00F4376A /* libevent_openssl-2.1.1.dylib */; };
+		56CDA542157E3D3D00F4376A /* libevent_pthreads-2.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA53A157E3D3D00F4376A /* libevent_pthreads-2.1.1.dylib */; };
+		56CDA543157E3D3D00F4376A /* libevent-2.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA53B157E3D3D00F4376A /* libevent-2.1.1.dylib */; };
+		56CDA544157E3D3D00F4376A /* libvbucket.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CDA53C157E3D3D00F4376A /* libvbucket.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		566D71B3157B672D0006B664 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				566D71BC157B672D0006B664 /* Membase_Replicator.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		566D71B5157B672D0006B664 /* Membase-Replicator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Membase-Replicator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		566D71B9157B672D0006B664 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		566D71BB157B672D0006B664 /* Membase_Replicator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Membase_Replicator.1; sourceTree = "<group>"; };
+		566D721E157B69020006B664 /* callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callbacks.h; sourceTree = "<group>"; };
+		566D721F157B69020006B664 /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		566D7220157B69020006B664 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		566D7221157B69020006B664 /* MembaseClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MembaseClient.cpp; sourceTree = "<group>"; };
+		566D7222157B69020006B664 /* MembaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembaseClient.h; sourceTree = "<group>"; };
+		566D7223157B69020006B664 /* MembaseBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembaseBridge.h; sourceTree = "<group>"; };
+		566D7227157B69610006B664 /* MP_MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP_MC.h; sourceTree = "<group>"; };
+		566D7228157B6CA90006B664 /* MembaseCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembaseCallbacks.h; sourceTree = "<group>"; };
+		566D7229157B6D3D0006B664 /* MembaseCallbacks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MembaseCallbacks.cpp; sourceTree = "<group>"; };
+		566D722B157B72640006B664 /* MembaseCBImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembaseCBImpl.h; sourceTree = "<group>"; };
+		566D722C157B744F0006B664 /* MembaseCBImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MembaseCBImpl.cpp; sourceTree = "<group>"; };
+		56CDA463157C79E300F4376A /* nullstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nullstream.hpp; sourceTree = "<group>"; };
+		56CDA464157C79E300F4376A /* tri_logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tri_logger.cpp; sourceTree = "<group>"; };
+		56CDA465157C79E300F4376A /* tri_logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tri_logger.hpp; sourceTree = "<group>"; };
+		56CDA46C157DC88F00F4376A /* TapJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapJob.h; sourceTree = "<group>"; };
+		56CDA46D157DCC9000F4376A /* TapJob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TapJob.cpp; sourceTree = "<group>"; };
+		56CDA473157DD4B100F4376A /* ReplicatorJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorJob.h; sourceTree = "<group>"; };
+		56CDA474157DD5C800F4376A /* ReplicatorJob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReplicatorJob.cpp; sourceTree = "<group>"; };
+		56CDA476157E187800F4376A /* MembaseBridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MembaseBridge.cpp; sourceTree = "<group>"; };
+		56CDA49A157E39E200F4376A /* kyotocabinet.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = kyotocabinet.pc; sourceTree = "<group>"; };
+		56CDA49B157E39E200F4376A /* libevent.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libevent.pc; sourceTree = "<group>"; };
+		56CDA49C157E39E200F4376A /* libevent_openssl.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libevent_openssl.pc; sourceTree = "<group>"; };
+		56CDA49D157E39E200F4376A /* libevent_pthreads.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libevent_pthreads.pc; sourceTree = "<group>"; };
+		56CDA49E157E39E200F4376A /* libvbucket.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libvbucket.pc; sourceTree = "<group>"; };
+		56CDA503157E3D0600F4376A /* libboost_chrono-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_chrono-mt.dylib"; path = "usr/local/lib/libboost_chrono-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA504157E3D0600F4376A /* libboost_date_time-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_date_time-mt.dylib"; path = "usr/local/lib/libboost_date_time-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA505157E3D0600F4376A /* libboost_filesystem-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_filesystem-mt.dylib"; path = "usr/local/lib/libboost_filesystem-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA506157E3D0700F4376A /* libboost_graph-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_graph-mt.dylib"; path = "usr/local/lib/libboost_graph-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA507157E3D0700F4376A /* libboost_iostreams-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_iostreams-mt.dylib"; path = "usr/local/lib/libboost_iostreams-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA508157E3D0700F4376A /* libboost_locale-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_locale-mt.dylib"; path = "usr/local/lib/libboost_locale-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA509157E3D0700F4376A /* libboost_math_c99-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_math_c99-mt.dylib"; path = "usr/local/lib/libboost_math_c99-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA50A157E3D0700F4376A /* libboost_math_c99f-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_math_c99f-mt.dylib"; path = "usr/local/lib/libboost_math_c99f-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA50B157E3D0700F4376A /* libboost_math_c99l-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_math_c99l-mt.dylib"; path = "usr/local/lib/libboost_math_c99l-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA50C157E3D0700F4376A /* libboost_math_tr1-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_math_tr1-mt.dylib"; path = "usr/local/lib/libboost_math_tr1-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA50D157E3D0700F4376A /* libboost_math_tr1f-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_math_tr1f-mt.dylib"; path = "usr/local/lib/libboost_math_tr1f-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA50E157E3D0700F4376A /* libboost_math_tr1l-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_math_tr1l-mt.dylib"; path = "usr/local/lib/libboost_math_tr1l-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA50F157E3D0700F4376A /* libboost_prg_exec_monitor-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_prg_exec_monitor-mt.dylib"; path = "usr/local/lib/libboost_prg_exec_monitor-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA510157E3D0700F4376A /* libboost_program_options-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_program_options-mt.dylib"; path = "usr/local/lib/libboost_program_options-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA511157E3D0700F4376A /* libboost_python-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_python-mt.dylib"; path = "usr/local/lib/libboost_python-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA512157E3D0700F4376A /* libboost_random-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_random-mt.dylib"; path = "usr/local/lib/libboost_random-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA513157E3D0700F4376A /* libboost_regex-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_regex-mt.dylib"; path = "usr/local/lib/libboost_regex-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA514157E3D0700F4376A /* libboost_serialization-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_serialization-mt.dylib"; path = "usr/local/lib/libboost_serialization-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA515157E3D0700F4376A /* libboost_signals-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_signals-mt.dylib"; path = "usr/local/lib/libboost_signals-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA516157E3D0700F4376A /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "usr/local/lib/libboost_system-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA517157E3D0700F4376A /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "usr/local/lib/libboost_thread-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA518157E3D0700F4376A /* libboost_timer-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_timer-mt.dylib"; path = "usr/local/lib/libboost_timer-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA519157E3D0700F4376A /* libboost_unit_test_framework-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_unit_test_framework-mt.dylib"; path = "usr/local/lib/libboost_unit_test_framework-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA51A157E3D0700F4376A /* libboost_wave-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_wave-mt.dylib"; path = "usr/local/lib/libboost_wave-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA51B157E3D0700F4376A /* libboost_wserialization-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_wserialization-mt.dylib"; path = "usr/local/lib/libboost_wserialization-mt.dylib"; sourceTree = SDKROOT; };
+		56CDA535157E3D3D00F4376A /* libcouchbase_libevent.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcouchbase_libevent.1.dylib; path = ../../../../../opt/membase/lib/libcouchbase_libevent.1.dylib; sourceTree = "<group>"; };
+		56CDA536157E3D3D00F4376A /* libcouchbase.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcouchbase.1.dylib; path = ../../../../../opt/membase/lib/libcouchbase.1.dylib; sourceTree = "<group>"; };
+		56CDA537157E3D3D00F4376A /* libevent_core-2.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libevent_core-2.1.1.dylib"; path = "../../../../../opt/membase/lib/libevent_core-2.1.1.dylib"; sourceTree = "<group>"; };
+		56CDA538157E3D3D00F4376A /* libevent_extra-2.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libevent_extra-2.1.1.dylib"; path = "../../../../../opt/membase/lib/libevent_extra-2.1.1.dylib"; sourceTree = "<group>"; };
+		56CDA539157E3D3D00F4376A /* libevent_openssl-2.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libevent_openssl-2.1.1.dylib"; path = "../../../../../opt/membase/lib/libevent_openssl-2.1.1.dylib"; sourceTree = "<group>"; };
+		56CDA53A157E3D3D00F4376A /* libevent_pthreads-2.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libevent_pthreads-2.1.1.dylib"; path = "../../../../../opt/membase/lib/libevent_pthreads-2.1.1.dylib"; sourceTree = "<group>"; };
+		56CDA53B157E3D3D00F4376A /* libevent-2.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libevent-2.1.1.dylib"; path = "../../../../../opt/membase/lib/libevent-2.1.1.dylib"; sourceTree = "<group>"; };
+		56CDA53C157E3D3D00F4376A /* libvbucket.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvbucket.1.dylib; path = ../../../../../opt/membase/lib/libvbucket.1.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		566D71B2157B672D0006B664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CDA53D157E3D3D00F4376A /* libcouchbase_libevent.1.dylib in Frameworks */,
+				56CDA53E157E3D3D00F4376A /* libcouchbase.1.dylib in Frameworks */,
+				56CDA53F157E3D3D00F4376A /* libevent_core-2.1.1.dylib in Frameworks */,
+				56CDA540157E3D3D00F4376A /* libevent_extra-2.1.1.dylib in Frameworks */,
+				56CDA541157E3D3D00F4376A /* libevent_openssl-2.1.1.dylib in Frameworks */,
+				56CDA542157E3D3D00F4376A /* libevent_pthreads-2.1.1.dylib in Frameworks */,
+				56CDA543157E3D3D00F4376A /* libevent-2.1.1.dylib in Frameworks */,
+				56CDA544157E3D3D00F4376A /* libvbucket.1.dylib in Frameworks */,
+				56CDA51C157E3D0800F4376A /* libboost_chrono-mt.dylib in Frameworks */,
+				56CDA51D157E3D0800F4376A /* libboost_date_time-mt.dylib in Frameworks */,
+				56CDA51E157E3D0800F4376A /* libboost_filesystem-mt.dylib in Frameworks */,
+				56CDA51F157E3D0800F4376A /* libboost_graph-mt.dylib in Frameworks */,
+				56CDA520157E3D0800F4376A /* libboost_iostreams-mt.dylib in Frameworks */,
+				56CDA521157E3D0800F4376A /* libboost_locale-mt.dylib in Frameworks */,
+				56CDA522157E3D0800F4376A /* libboost_math_c99-mt.dylib in Frameworks */,
+				56CDA523157E3D0800F4376A /* libboost_math_c99f-mt.dylib in Frameworks */,
+				56CDA524157E3D0800F4376A /* libboost_math_c99l-mt.dylib in Frameworks */,
+				56CDA525157E3D0800F4376A /* libboost_math_tr1-mt.dylib in Frameworks */,
+				56CDA526157E3D0800F4376A /* libboost_math_tr1f-mt.dylib in Frameworks */,
+				56CDA527157E3D0800F4376A /* libboost_math_tr1l-mt.dylib in Frameworks */,
+				56CDA528157E3D0800F4376A /* libboost_prg_exec_monitor-mt.dylib in Frameworks */,
+				56CDA529157E3D0800F4376A /* libboost_program_options-mt.dylib in Frameworks */,
+				56CDA52A157E3D0800F4376A /* libboost_python-mt.dylib in Frameworks */,
+				56CDA52B157E3D0800F4376A /* libboost_random-mt.dylib in Frameworks */,
+				56CDA52C157E3D0800F4376A /* libboost_regex-mt.dylib in Frameworks */,
+				56CDA52D157E3D0800F4376A /* libboost_serialization-mt.dylib in Frameworks */,
+				56CDA52E157E3D0800F4376A /* libboost_signals-mt.dylib in Frameworks */,
+				56CDA52F157E3D0800F4376A /* libboost_system-mt.dylib in Frameworks */,
+				56CDA530157E3D0800F4376A /* libboost_thread-mt.dylib in Frameworks */,
+				56CDA531157E3D0800F4376A /* libboost_timer-mt.dylib in Frameworks */,
+				56CDA532157E3D0800F4376A /* libboost_unit_test_framework-mt.dylib in Frameworks */,
+				56CDA533157E3D0800F4376A /* libboost_wave-mt.dylib in Frameworks */,
+				56CDA534157E3D0800F4376A /* libboost_wserialization-mt.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		566D71AA157B672D0006B664 = {
+			isa = PBXGroup;
+			children = (
+				56CDA535157E3D3D00F4376A /* libcouchbase_libevent.1.dylib */,
+				56CDA536157E3D3D00F4376A /* libcouchbase.1.dylib */,
+				56CDA537157E3D3D00F4376A /* libevent_core-2.1.1.dylib */,
+				56CDA538157E3D3D00F4376A /* libevent_extra-2.1.1.dylib */,
+				56CDA539157E3D3D00F4376A /* libevent_openssl-2.1.1.dylib */,
+				56CDA53A157E3D3D00F4376A /* libevent_pthreads-2.1.1.dylib */,
+				56CDA53B157E3D3D00F4376A /* libevent-2.1.1.dylib */,
+				56CDA53C157E3D3D00F4376A /* libvbucket.1.dylib */,
+				56CDA503157E3D0600F4376A /* libboost_chrono-mt.dylib */,
+				56CDA504157E3D0600F4376A /* libboost_date_time-mt.dylib */,
+				56CDA505157E3D0600F4376A /* libboost_filesystem-mt.dylib */,
+				56CDA506157E3D0700F4376A /* libboost_graph-mt.dylib */,
+				56CDA507157E3D0700F4376A /* libboost_iostreams-mt.dylib */,
+				56CDA508157E3D0700F4376A /* libboost_locale-mt.dylib */,
+				56CDA509157E3D0700F4376A /* libboost_math_c99-mt.dylib */,
+				56CDA50A157E3D0700F4376A /* libboost_math_c99f-mt.dylib */,
+				56CDA50B157E3D0700F4376A /* libboost_math_c99l-mt.dylib */,
+				56CDA50C157E3D0700F4376A /* libboost_math_tr1-mt.dylib */,
+				56CDA50D157E3D0700F4376A /* libboost_math_tr1f-mt.dylib */,
+				56CDA50E157E3D0700F4376A /* libboost_math_tr1l-mt.dylib */,
+				56CDA50F157E3D0700F4376A /* libboost_prg_exec_monitor-mt.dylib */,
+				56CDA510157E3D0700F4376A /* libboost_program_options-mt.dylib */,
+				56CDA511157E3D0700F4376A /* libboost_python-mt.dylib */,
+				56CDA512157E3D0700F4376A /* libboost_random-mt.dylib */,
+				56CDA513157E3D0700F4376A /* libboost_regex-mt.dylib */,
+				56CDA514157E3D0700F4376A /* libboost_serialization-mt.dylib */,
+				56CDA515157E3D0700F4376A /* libboost_signals-mt.dylib */,
+				56CDA516157E3D0700F4376A /* libboost_system-mt.dylib */,
+				56CDA517157E3D0700F4376A /* libboost_thread-mt.dylib */,
+				56CDA518157E3D0700F4376A /* libboost_timer-mt.dylib */,
+				56CDA519157E3D0700F4376A /* libboost_unit_test_framework-mt.dylib */,
+				56CDA51A157E3D0700F4376A /* libboost_wave-mt.dylib */,
+				56CDA51B157E3D0700F4376A /* libboost_wserialization-mt.dylib */,
+				56CDA499157E39E000F4376A /* pkgconfig */,
+				566D71B8157B672D0006B664 /* Membase-Replicator */,
+				566D71B6157B672D0006B664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		566D71B6157B672D0006B664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				566D71B5157B672D0006B664 /* Membase-Replicator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		566D71B8157B672D0006B664 /* Membase-Replicator */ = {
+			isa = PBXGroup;
+			children = (
+				56CDA463157C79E300F4376A /* nullstream.hpp */,
+				56CDA464157C79E300F4376A /* tri_logger.cpp */,
+				56CDA465157C79E300F4376A /* tri_logger.hpp */,
+				566D721E157B69020006B664 /* callbacks.h */,
+				566D721F157B69020006B664 /* Config.cpp */,
+				566D7220157B69020006B664 /* Config.h */,
+				566D7221157B69020006B664 /* MembaseClient.cpp */,
+				566D7222157B69020006B664 /* MembaseClient.h */,
+				566D7223157B69020006B664 /* MembaseBridge.h */,
+				566D71B9157B672D0006B664 /* main.cpp */,
+				566D71BB157B672D0006B664 /* Membase_Replicator.1 */,
+				566D7227157B69610006B664 /* MP_MC.h */,
+				566D7228157B6CA90006B664 /* MembaseCallbacks.h */,
+				566D7229157B6D3D0006B664 /* MembaseCallbacks.cpp */,
+				566D722B157B72640006B664 /* MembaseCBImpl.h */,
+				566D722C157B744F0006B664 /* MembaseCBImpl.cpp */,
+				56CDA46C157DC88F00F4376A /* TapJob.h */,
+				56CDA46D157DCC9000F4376A /* TapJob.cpp */,
+				56CDA473157DD4B100F4376A /* ReplicatorJob.h */,
+				56CDA474157DD5C800F4376A /* ReplicatorJob.cpp */,
+				56CDA476157E187800F4376A /* MembaseBridge.cpp */,
+			);
+			path = "Membase-Replicator";
+			sourceTree = "<group>";
+		};
+		56CDA499157E39E000F4376A /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				56CDA49A157E39E200F4376A /* kyotocabinet.pc */,
+				56CDA49B157E39E200F4376A /* libevent.pc */,
+				56CDA49C157E39E200F4376A /* libevent_openssl.pc */,
+				56CDA49D157E39E200F4376A /* libevent_pthreads.pc */,
+				56CDA49E157E39E200F4376A /* libvbucket.pc */,
+			);
+			name = pkgconfig;
+			path = ../../../../../opt/membase/lib/pkgconfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		566D71B4157B672D0006B664 /* Membase-Replicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566D71BF157B672D0006B664 /* Build configuration list for PBXNativeTarget "Membase-Replicator" */;
+			buildPhases = (
+				566D71B1157B672D0006B664 /* Sources */,
+				566D71B2157B672D0006B664 /* Frameworks */,
+				566D71B3157B672D0006B664 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Membase-Replicator";
+			productName = "Membase-Replicator";
+			productReference = 566D71B5157B672D0006B664 /* Membase-Replicator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		566D71AC157B672D0006B664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 566D71AF157B672D0006B664 /* Build configuration list for PBXProject "Membase-Replicator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 566D71AA157B672D0006B664;
+			productRefGroup = 566D71B6157B672D0006B664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				566D71B4157B672D0006B664 /* Membase-Replicator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		566D71B1157B672D0006B664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566D71BA157B672D0006B664 /* main.cpp in Sources */,
+				566D7224157B69030006B664 /* Config.cpp in Sources */,
+				566D7225157B69030006B664 /* MembaseClient.cpp in Sources */,
+				566D722A157B6D3D0006B664 /* MembaseCallbacks.cpp in Sources */,
+				566D722D157B744F0006B664 /* MembaseCBImpl.cpp in Sources */,
+				56CDA466157C79E300F4376A /* tri_logger.cpp in Sources */,
+				56CDA46E157DCC9000F4376A /* TapJob.cpp in Sources */,
+				56CDA475157DD5C800F4376A /* ReplicatorJob.cpp in Sources */,
+				56CDA477157E187900F4376A /* MembaseBridge.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		566D71BD157B672D0006B664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/opt/membase/include/**";
+				LIBRARY_SEARCH_PATHS = "/opt/membase/lib/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		566D71BE157B672D0006B664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/opt/membase/include/**";
+				LIBRARY_SEARCH_PATHS = "/opt/membase/lib/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		566D71C0157B672D0006B664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/membase/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		566D71C1157B672D0006B664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/membase/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		566D71AF157B672D0006B664 /* Build configuration list for PBXProject "Membase-Replicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566D71BD157B672D0006B664 /* Debug */,
+				566D71BE157B672D0006B664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		566D71BF157B672D0006B664 /* Build configuration list for PBXNativeTarget "Membase-Replicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566D71C0157B672D0006B664 /* Debug */,
+				566D71C1157B672D0006B664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 566D71AC157B672D0006B664 /* Project object */;
+}
