@@ -1,1 +1,1 @@
-Cross DC Membase bucket replicator using TAP.
+Cross DC Membase bucket replicator using TAP. Dependent on libcouchbase lib.
